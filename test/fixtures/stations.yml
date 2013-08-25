@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  station_id: 1
+  station_name: MyString
+  total_docks: 1
+  latitude: MyString
+  longitude: MyString
+  st_address1: MyString
+  st_address2: MyString
+  city: MyString
+  postal_code: MyString
+  location: MyString
+  altitude: MyString
+
+two:
+  station_id: 1
+  station_name: MyString
+  total_docks: 1
+  latitude: MyString
+  longitude: MyString
+  st_address1: MyString
+  st_address2: MyString
+  city: MyString
+  postal_code: MyString
+  location: MyString
+  altitude: MyString

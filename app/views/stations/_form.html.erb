@@ -1,0 +1,61 @@
+<%= form_for(@station) do |f| %>
+  <% if @station.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@station.errors.count, "error") %> prohibited this station from being saved:</h2>
+
+      <ul>
+      <% @station.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :station_id %><br />
+    <%= f.number_field :station_id %>
+  </div>
+  <div class="field">
+    <%= f.label :station_name %><br />
+    <%= f.text_field :station_name %>
+  </div>
+  <div class="field">
+    <%= f.label :total_docks %><br />
+    <%= f.number_field :total_docks %>
+  </div>
+  <div class="field">
+    <%= f.label :latitude %><br />
+    <%= f.text_field :latitude %>
+  </div>
+  <div class="field">
+    <%= f.label :longitude %><br />
+    <%= f.text_field :longitude %>
+  </div>
+  <div class="field">
+    <%= f.label :st_address1 %><br />
+    <%= f.text_field :st_address1 %>
+  </div>
+  <div class="field">
+    <%= f.label :st_address2 %><br />
+    <%= f.text_field :st_address2 %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :postal_code %><br />
+    <%= f.text_field :postal_code %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :altitude %><br />
+    <%= f.text_field :altitude %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
