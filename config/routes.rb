@@ -1,4 +1,7 @@
 Divvy::Application.routes.draw do
+  resources :events
+
+
   resources :stations
 
 

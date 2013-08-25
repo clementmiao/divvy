@@ -1,0 +1,37 @@
+<%= form_for(@event) do |f| %>
+  <% if @event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@event.errors.count, "error") %> prohibited this event from being saved:</h2>
+
+      <ul>
+      <% @event.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :station_id %><br />
+    <%= f.number_field :station_id %>
+  </div>
+  <div class="field">
+    <%= f.label :available_docks %><br />
+    <%= f.number_field :available_docks %>
+  </div>
+  <div class="field">
+    <%= f.label :status_value %><br />
+    <%= f.text_field :status_value %>
+  </div>
+  <div class="field">
+    <%= f.label :status_key %><br />
+    <%= f.number_field :status_key %>
+  </div>
+  <div class="field">
+    <%= f.label :available_bikes %><br />
+    <%= f.number_field :available_bikes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

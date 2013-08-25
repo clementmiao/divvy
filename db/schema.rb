@@ -11,7 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130730224838) do
+ActiveRecord::Schema.define(:version => 20130825202727) do
+
+  create_table "events", :force => true do |t|
+    t.integer  "station_id"
+    t.integer  "available_docks"
+    t.string   "status_value"
+    t.integer  "status_key"
+    t.integer  "available_bikes"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
 
   create_table "stations", :force => true do |t|
     t.integer  "station_id"
@@ -27,6 +37,7 @@ ActiveRecord::Schema.define(:version => 20130730224838) do
     t.string   "altitude"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+    t.string   "landmark"
   end
 
 end

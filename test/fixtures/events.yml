@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  station_id: 1
+  available_docks: 1
+  status_value: MyString
+  status_key: 1
+  available_bikes: 1
+
+two:
+  station_id: 1
+  available_docks: 1
+  status_value: MyString
+  status_key: 1
+  available_bikes: 1

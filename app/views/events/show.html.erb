@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Station:</b>
+  <%= @event.station_id %>
+</p>
+
+<p>
+  <b>Available docks:</b>
+  <%= @event.available_docks %>
+</p>
+
+<p>
+  <b>Status value:</b>
+  <%= @event.status_value %>
+</p>
+
+<p>
+  <b>Status key:</b>
+  <%= @event.status_key %>
+</p>
+
+<p>
+  <b>Available bikes:</b>
+  <%= @event.available_bikes %>
+</p>
+
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>
