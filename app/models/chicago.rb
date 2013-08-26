@@ -39,4 +39,6 @@ class Chicago
       event.save
     end
   end
+
+  
 end
